@@ -1,0 +1,160 @@
+body{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    overflow-x:hidden;
+    background-color: rgb(233, 231, 231,0.3);
+}
+.navigation_bar{
+    background-color: rgba(202, 202, 202, 0.1);
+    padding: 2% 5% 2% 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 90vw;
+    max-height: 8vh;
+}
+a{
+    text-decoration: none;
+}
+.nav_logo{
+    font-size: 1.7em;
+    font-weight: 300;
+    color: black;
+}
+.nav_links a{
+    font-size: 1em;
+    color: rgba(31, 29, 30,0.8);
+    transition: color 0.2s;
+}
+.nav_links a:hover{
+    color: rgb(110, 189, 235);
+}
+.nav_links{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+}
+.nav_links li{
+    margin-left: 5%;
+}
+.content{
+    padding-left:15%;
+    margin-top: 13vh;
+}
+.introduction{
+    display:grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+}
+.intro_left{
+    padding-top: 50%;
+}
+.intro_left h2{
+    position: absolute;
+    bottom: 20%;
+    right: 50%;
+    font-size: 5.5em;
+    font-weight: 300;
+}
+.intro_left p{
+    margin-top: 10%;
+    padding-left: 5%;
+}
+.projects{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top:7%;
+    padding-right: 20%;
+}
+.project_header{
+    font-size: 3em;
+    font-weight: 100;
+}
+.project{
+    margin-bottom: 15%;
+}
+.project_top_heading{
+    font-size: 1.8em;
+    font-weight: 100;
+
+}
+.project_top_links{
+    font-size: 1.2em;
+    color: black;
+    font-weight: 100;
+    line-height: 3em;
+}
+.project_bottom{
+    font-size: 0.8em;
+    font-weight: 100;
+    color: rgba(31, 29, 30,0.8);
+}
+.project_top{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.project img{
+    width:100%;
+    height: auto;
+}
+.project_bottom{
+    margin-top: 1%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.about h2{
+    font-weight: 100;
+    font-size: 4em;
+}
+.about p{
+    font-weight: 100;
+    font-size: 1.1em;
+    line-height: 1.3em;
+}
+.about_grid{
+    display:grid;
+    grid-template-columns: 50% 50%;
+    justify-content: space-between;
+}
+.about a{
+    font-weight: 500;
+    color: black;
+    font-size: 1.4em;
+}
+.about_box2{
+    background-image: url('../pictures/about.jpg');
+    background-size: 100% 100%;
+}
+.about_box1{
+    padding-left: 10%;
+    padding-top: 15%;
+    padding-right: 15%;
+    background-color: rgba(226, 209, 224, 0.2);
+    padding-bottom: 15%;
+}
+.about_box1 p{
+    margin-top: 10%;
+}
+.credits{
+    padding: 0 5% 0 5%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgba(17, 17, 17,0.9);
+}
+.credits h5{
+    font-weight: 100;
+    font-size: 0.8em;
+    color: white;
+}
+.credits a{
+    color: white;
+    text-decoration: underline;
+}

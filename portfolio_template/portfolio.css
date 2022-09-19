@@ -1,0 +1,354 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: rgba(240, 240, 240, 0.5);
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Source Code Pro', monospace;
+}
+*{
+    scroll-behavior: smooth;
+}
+
+i{
+    margin: 0 0.5em;
+}
+.nav_bar{
+    background-image: url(../pictures/port_background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 48vh;
+    position: relative;
+}
+.nav_bar a{
+    color: rgb(49, 49, 49);
+    font-size: 1.1em;
+    transition: color 0.2s;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position:fixed;
+    top: 0;
+    width: 100%;
+    min-height: 5vh;
+    z-index: 1;
+}
+.nav_links{
+    padding:0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.nav_links li{
+    margin-right: 0em;
+    padding: 10px;
+    transition: background 0.2s;
+}
+.nav_links li:hover{
+    background-color: rgba(194, 193, 193, 0.5);
+}
+.nav_links li:hover a{
+    color: black;
+}
+.search_icon{
+    padding: 10px;
+    transition: background 0.2s;
+}
+.search_icon:hover{
+    background-color: rgba(253, 23, 23,0.8);
+}
+.fa-search{
+    transition: color 0.2s;
+}
+.search_icon:hover .fa-search{
+    color:white;
+}
+.banner{
+    padding: 0.2em 0.8em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.2em;
+    font-weight: 100;
+    color: white;
+    background-color: rgb(65, 65, 65);
+}
+.about_me{
+    padding: 4em 15em;
+}
+.subheadings{
+    text-align: center;
+    font-weight: 100;
+    font-size: 2em;
+    color: rgb(143, 132, 132)
+}
+.underheadings{
+    text-align: center;
+    font-weight: 100;
+    font-size: 1em;
+    color: rgb(143, 132, 132)
+}
+.about_me p{
+    font-weight: 100;
+    color: rgb(143, 132, 132);
+    font-size: 1em;
+    line-height: 1.5em;
+}
+.about_me h5{
+    color: rgb(102, 99, 99);
+    font-size: 1em;
+    font-weight: 100;
+}
+.about_me h3{
+    color: rgb(143, 132, 132);
+    font-weight: 100;
+    font-size: 1.4em;
+}
+.bar_data{
+    color: rgb(143, 132, 132);
+    font-weight: 100;
+}
+.skill{
+    color: white;
+}
+.my_name{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.my_name img{
+    width: 80%;
+    height: auto;
+    opacity: 60%;
+}
+.my_name img:hover{
+    opacity: 100%;
+}
+.my_name div{
+    flex-basis: 50%;
+    padding: 0% 0%;
+}
+.my_name p{
+    line-height: 1.5em;
+}
+.about_me h3{
+    text-align: center;
+    margin-top: 3em;
+}
+.bar_data{
+    padding: 2% 0;
+}
+.bar_container{
+    background-color: rgba(224, 224, 224,0.4);
+    color:white;
+    width: 100%;
+}
+.skill{
+    background-color: rgb(87, 85, 85);
+    padding: 0.7em 0em;
+    text-align: center;
+}
+.photo{
+    width: 90%;
+}
+.web{
+    width: 85%;
+}
+.photoshop{
+    width: 75%;
+}
+.port_strip{
+    background-color: rgb(87, 85, 85);
+    color:white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 1.5em 0;
+    margin:0;
+}
+.port_strip span{
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.port_strip p{
+    text-align: center;
+}
+.port_image{
+    background-image: url(../pictures/port_port.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 50vh;
+}
+.port_image h3{
+    position: absolute;
+    color: white;
+    font-size: 3em;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+    font-weight: 100;
+}
+.my_work{
+    padding: 4em 15em;
+}
+.work_images{
+    margin-top: 3em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.work_images div{
+    margin: 0.5em;
+}
+.work_images img{
+    width: 13.2em;
+    height: 12em;
+}
+.work_images img:hover{
+    opacity: 60%;
+}
+.work_button{
+    margin-top: 3em;
+    padding: 0.7em 1em;
+    font-size: 1.1em;
+    font-weight: 400;
+    background-color: rgba(167, 166, 166,0.2);
+    color: black;
+    border: none;
+    border-radius: 0.2em;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.work_button:hover{
+    background-color: rgba(167, 166, 166,0.4);
+}
+.contact{
+    height: 45vh;
+    position: relative;
+    background-image: url(../pictures/port_contact.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.contact h1{
+    position: absolute;
+    font-size: 3em;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: 100;
+}
+.location{
+    padding: 4em 15em;
+}
+.location_form{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 3em;
+
+}
+.location_form img{
+    width: 90%;
+    height: auto;
+    border-radius: 5px;
+}
+.location_form div{
+    font-size: 1.1em;
+    font-weight: 100;
+    color: grey;
+}
+.location_form p{
+    font-size: 0.9em;
+}
+input{
+    font-size: 1em;
+    outline: none;
+    padding: 0.5em 1em;
+    border-radius: 10px;
+    width: 40%;
+    border:none;
+    margin: 0.2em;
+}
+input[placeholder='message']{
+    width:88%;
+}
+form div{ 
+    text-align: right;
+    padding-right: 1.4em;
+}
+form button{
+    padding: 1em 1em;
+    font-size: 0.7em;
+    margin-top: 1em;
+    border:none;
+    border-radius: 4px;
+    background-color: black;
+    color: white;
+    font-weight: 300;
+    transition: background 0.2s, color 0.2s;
+}
+form button:hover{
+    background-color: lightgrey;
+    color: black
+}
+.credits{
+    background-color: rgb(83, 83, 83);
+    padding: 5em;
+    padding-top: 4em;
+    padding-bottom: 3em;
+    text-align: center;
+    transition: background 0.2s;
+}
+.credits:hover{
+    background-color: black;
+}
+.credits button{
+    margin-bottom: 3em;
+    padding: 1.5em 1.5em;
+    font-size: 0.9em;
+    border:none;
+    border-radius: 2px;
+    background-color: white;
+    transition: background 0.2s;
+}
+.credits button:hover{
+    background-color: rgb(218, 218, 218);
+}
+.credit_icons i{
+    margin-bottom: 1em;
+    font-size: 1.5em;
+    color: white;
+    transition: color 0.2s;
+}
+.credit_icons i:hover{
+    color: rgb(136, 133, 133);
+}
+.credits p{
+    margin-bottom: 2em;
+    color: white;
+}
+.credits a{
+    color: white;
+    text-decoration: underline;
+}
+a{
+    text-decoration: none;
+}
+button{
+    cursor: pointer;
+}
